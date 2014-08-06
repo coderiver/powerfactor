@@ -1,0 +1,400 @@
+a
+	text-decoration: none
+
+.all-wrapper
+	width: 100%
+	min-width: 1200px
+	margin: 0 auto
+	overflow: hidden
+	clear: both
+	background: url(../img/header-bg.jpg) repeat 
+	float: left
+//Header
+.wrapper-header
+	background: url(../img/menu-bg2.jpg) repeat-x top center
+	width: 100%
+	min-width: 1200px
+	clear: both
+	float: left
+	position: absolute
+	top: 0px
+	left: 0px
+	z-index: 9999
+.header
+	width: 1056px
+	margin: 0 auto
+	clear: both
+	position: relative
+	padding: 13px 72px 0px 72px
+	
+.logo
+	float: left
+	z-index: 9999
+	display: block
+	width: 130px
+	height: 130px
+	border-radius: 50%
+	position: absolute
+	left: 72px
+	top: 13px
+	-webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 1)
+	box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 1)
+	
+.menu
+	float: right
+	margin-right: 4px
+	.menu__item
+		display: inline-block
+		line-height: 1
+		float: left
+		padding: 13px 16px 24px 16px
+	.menu__link
+		font-size: 16px
+		color: white
+		+frcb
+		letter-spacing: 0.22px
+.phone
+	position: absolute
+	z-index: 9998
+	float: left
+	left: 160px
+	top: 66px
+	text-align: left
+	display: block
+	+s(phone-bg)
+	span
+		padding-left: 74px
+		display: block
+		color: #0e0e0e
+		line-height: 1
+		padding-top: 4px
+	.phone__number
+		font-size: 18px
+		padding-top: 5px
+		+frcb
+		letter-spacing: 0.65px
+	.phone__time
+		font-size: 13px
+		+frr
+		letter-spacing: 0.5px
+//End header
+		
+//Slider
+.wrapper-slider
+	background: url(../img/slider-bg.png) repeat-x center center
+	width: 100%
+	position: relative
+	z-index: 888
+	height: 569px
+.slider
+	position: relative
+	width: 1056px
+	padding: 0px 72px 0px 72px
+	margin: 0 auto
+	z-index 999
+	height: 566px
+	.slider__item
+		width: 1056px
+		padding: 0px 72px 0px 72px
+		float: left
+		position: relative
+		z-index: 888
+		height: 566px
+		overflow: hidden
+		img
+			display: block
+			margin: 0 auto
+			z-index: 888
+			width: 1032px
+			height: 569px
+			padding-left: 29px
+	.slider__text
+		position: absolute
+		bottom: 66px
+		left: 73px
+		+frcb
+		font-size: 26px
+		color: white
+		width: 354px
+		border-top: solid 3px white
+		border-bottom: solid 3px white
+		padding: 12px 1px 13px 1px
+		text-align: center
+		line-height: 0.95
+		letter-spacing: 0.2px
+		span
+			+frc
+			font-size: 52px
+			letter-spacing: 1.3px
+		i
+			background: url(../img/star-white.png) no-repeat center center
+			width: 21px
+			height: 20px
+			display: block
+			margin-top: 26px
+		.slider__star-l
+			float: left
+		.slider__star-r
+			float: right
+.slider__buttons
+	position: absolute
+	bottom: -3px
+	left: 72px
+	z-index: 9999
+	span
+		cursor: pointer
+		float: left
+		text-indent: -1000px
+		display: block
+		width: 252px
+		height: 14px
+		background: #fcdc00
+		margin-right: 3px
+	span:hover
+		background: darken(#fcdc00, 10%)
+	.cycle-pager-active
+		background: black
+//End slider
+
+//Content
+.wrapper-content
+	background: url(../img/content-bg.png) repeat-x top center white
+	width: 100%
+	position: relative
+	z-index: 9997
+	clear: both
+	float: left
+.content
+	width: 1056px
+	padding: 45px 72px 0px 72px
+	margin: 0 auto
+	
+.heading
+	color: #191919
+	+frcb
+	font-size: 36px
+	text-align: center
+	width: 265px
+	margin: 0 auto
+	line-height: 0.9
+	letter-spacing: 1px
+	i
+		background: url(../img/star-black.png) no-repeat center center
+		width: 21px
+		height: 20px
+		display: block
+		margin-top: 6px
+	.heading__star-l
+		float: left
+	.heading__star-r
+		float: right
+
+.products
+	padding: 0px 18px 0px 18px
+	width: 1020px
+	border-top: solid 3px #191919
+	margin-top: 10px
+.products__button
+	margin: 0 auto
+	display: block
+	text-align: center
+	line-height: 1
+	+frcb
+	font-size: 19px
+	color: #0e0e0e
+	+s(products__button)
+	span
+		padding-top: 14px
+		display: block
+//Second slider		
+.products__slider
+	width: 10000px
+	margin-top: 69px
+	padding-bottom: 18px
+	float: left
+	.products__slide
+		float: left
+		width: 1020px
+	.products__row
+		float: left
+		clear: both
+		width: 1020px
+	.products__item
+		margin-left: 67px
+		display: block
+		float: left
+		width: 150px
+		overflow: hidden
+		text-align: center
+		margin-bottom: 59px
+		img
+			width: 100%
+			margin-bottom: 16px
+		span
+			font-size: 15px
+			+frcb
+			color: #191919
+			display: block
+			width: 100%
+	.products__item_first
+		margin-left: 0px
+.products__pagers
+	width: 1020px
+	position: relative
+.products__pager
+	display: block
+	width: 17px
+	height: 28px
+	position: absolute
+	top: 257px
+	z-index: 9999
+	cursor: pointer
+#products__prev
+	left: -52px
+	+s(prev)
+#products__next
+	+s(next)
+	right: -52px
+		
+//Footer
+.wrapper-footer
+	width: 100%
+	float: left
+	background: url(../img/footer-bg.png)
+.news
+	width: 1056px
+	padding: 42px 72px 0px 72px
+	margin: 0 auto
+	clear: both
+.news__left
+	float: left
+	width: 620px
+	padding-bottom: 36px
+	padding-top: 3px
+	.news__date
+		padding-top: 7px
+		padding-right: 10px
+	p
+		color: #eaeaea
+		font-size: 15px
+		+frc
+		margin-top: 10px
+		line-height: 1.1
+		letter-spacing: 0.66px
+.news__heading
+	font-size: 21px
+	+frcb
+	color: #eaeaea
+	letter-spacing: 0.8px
+.news__date
+	color: #cacaca
+	+frcb
+	font-size: 15px
+	display: block
+	letter-spacing: 1px
+.news__more
+	display: block
+	margin-top: 19px
+	padding: 9px 10px 10px 10px
+	background: #fcdc00
+	letter-spacing: 0.8px
+	float: left
+	color: #191919
+	+frc
+	font-size: 15px
+	line-height: 1
+.news__right
+	float: right
+	width: 383px
+	padding-right: 15px
+	padding-left: 20px
+	padding-bottom: 36px
+	ul
+		width: 100%
+		li
+			width: 100%
+			float: left
+			clear: both
+			.news__item
+				float: left
+				border-left: 7px solid #fcdc00
+				border-top: 6px solid #fcdc00
+				padding-bottom: 7px
+				margin-top: 3px
+				a
+					letter-spacing: 0.66px
+					background: #fcdc00
+					padding: 2px 7px 7px 0px
+					color: #191919
+					font-size: 15px
+					+frc
+					line-height: 1.3 
+			i
+				float: left
+				display: block
+				width: 10px
+				height: 9px
+				margin: 15px 6px 0px 8px
+				+s(star-news)
+				//background: url(../img/star-news.png) no-repeat
+			.news__date
+				margin-top: 9px
+				display: block
+				float: left
+				letter-spacing: 1.2px
+.clients
+	width: 1056px
+	margin: 0 auto
+	clear: both
+	border-top: 3px solid #404040
+	border-bottom: 3px solid #404040
+	.products__button
+		margin-top: -3px
+		letter-spacing: 0.6px
+		font-size: 18px
+		+s(products__button)
+		span
+			padding-top: 14px
+			display: block
+.clients__logos
+	width: 100%
+	padding-top: 28px
+	padding-bottom: 84px
+	a
+		margin-left: 46px
+		float: left
+		display: block
+	.clients__ford
+		margin-left: 0px
+	.clients__newspaper
+		margin-top: 8px
+	
+		
+.copy
+	width: 1056px
+	margin: 0 auto
+	.copy__info
+		padding-top: 24px
+		padding-bottom: 30px
+		clear: both
+		float: left
+		width: 100%
+	span
+		+frr
+		font-size: 12px
+		color: #eaeaea
+		letter-spacing: 0.2px
+		display: block
+		float: left
+	.copy__phone
+		display: block
+		+frcb
+		font-size: 18px
+		color: white
+		padding-right: 2px
+		letter-spacing: 0.65px
+		line-height: 1
+
+.is-right
+	float: right
+	

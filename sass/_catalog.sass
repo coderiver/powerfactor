@@ -1,0 +1,129 @@
+.margin-content
+	margin-top: 36px
+	padding-bottom: 80px
+	padding-top: 1px
+	background: #f1f1f1
+	.heading
+		float: left
+		text-align: left
+		width: 647px
+		margin: 29px 18px 5px -2px
+		line-height: 1.6
+		letter-spacing: 1px
+//SIDEBAR
+
+.sidebar
+	float: left
+	margin-top: -45px
+	padding: 118px 20px 30px 20px
+	width: 277px
+	margin-right: 47px
+	margin-left: 9px
+	background: url(../img/sidebar-bg.jpg) top left
+.sidebar__menu
+	width: 100%
+.sidebar__item
+	display: block
+	width: 100%
+	border-bottom: solid 1px #3a3a3a
+	padding: 9px 0px 9px 0px
+.sidebar__link
+	display: block
+	+frcb
+	font-size: 18px
+	color: #eaeaea
+	padding: 4px 5px 4px 10px
+	letter-spacing: 0.45px
+.sidebar__link:hover
+	background: #fcdc00
+	color: #191919
+.sidebar__submenu
+	a
+		+frc
+		font-size: 15px
+		color: #eaeaea
+		margin: 9px 10px 11px 10px
+		display: block
+		letter-spacing: 0.7px
+		.sidebar__star
+			float: left
+			display: block
+			width: 10px
+			height: 9px
+			margin: 6px 7px 0px 13px
+			+s(star-news)
+	a:hover
+		color: #fcdc00
+		.sidebar__star
+			+s(star-news-yellow)
+
+	a.sidebar__submenu_active
+		color: #fcdc00
+		.sidebar__star
+			+s(star-news-yellow)
+	
+
+.sidebar__item_last
+	border-bottom: none
+.sidebar__item_active
+	border-bottom: none
+	padding: 10px 0px 3px 0px
+	.sidebar__link
+		background: #fcdc00
+		color: #191919
+//CATALOG SLIDER	
+.catalog
+	width: 647px
+	float: left
+	.catalog__slider
+		padding-bottom: 10px
+		margin-top: 50px
+	.catalog__slide
+		width: 100%
+	.catalog__row
+		width: 100%
+		.products__item
+			margin-left: 89px
+		.products__item_first
+			margin-left: 0px
+.catalog__pagers
+	width: 683px
+	position: relative
+	float: left
+	.catalog__pager
+		display: block
+		padding: 8px 0px 8px 0px
+		z-index: 9999
+		cursor: pointer
+		background: #fcdc00
+		+frc
+		font-size: 15px
+		color: #191919
+		line-height: 1.1
+		letter-spacing: 0.7px
+		i
+			margin: 0px 12px 0px 12px
+			display: block
+			width: 11px
+			height: 18px
+	#catalog__prev
+		float: left
+		padding-right: 10px
+		i
+			float: left
+			+s(catalog-prev)
+	#catalog__next
+		float: right
+		padding-left: 12px
+		i	
+			margin-left: 19px
+			float: right
+			+s(catalog-next)
+			
+
+
+.border-footer
+	border-top: 3px solid #404040
+	.clients
+		border-top: none
+		padding-top: 14px
